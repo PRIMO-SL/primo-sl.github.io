@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Articles</title>
+  <title>PRIMO</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -92,7 +92,6 @@
 
     </div>
   </header><!-- End Header -->
-
   <main id="main">
 
     <!-- ======= Breadcrumbs ======= -->
@@ -101,89 +100,53 @@
 
         <ol>
           <li><a href="index.html">Home</a></li>
-          <li>Articles</li>
+          <li><a href="articles.html">Articles</a></li>
+          <li><a href="article_1.html">Suitcase Scenerio</a></li>
         </ol>
-        <h2>Articles</h2>
+        <h2>Suitcase Scenerio</h2>
+        <h5><i>By Robert Hu</i></h5>
+
       </div>
-      <Article>
     </section><!-- End Breadcrumbs -->
 
     <section class="inner-page">
-      <div class="container" data-aos="fade-up">
+      <div class="container">
+        <div class="article">
+          <h4>Original Question:</h4>
+          <p><u>Five people check identical suitcases.
+            At the baggage claim, each person takes one of the five suitcases at random.
+            What is the probability that every person ends up with the wrong suitcase?
+          </u></p>
+          <p>Answer: <b>11/30</b></p>
+          <br>
+          <h4>Solution:</h4>
+          <p>Let’s start from one person, one suitcase. The probability is 0.<br>
+          Then let n be the number of people, which is also the number of suitcases<br>
+          If n = 2, P = <sup>1</sup>⁄<sub>2</sub><br>
+          If n = 3, P = <sup>1</sup>⁄<sub>3</sub><br>
+          If n = 4, P = <sup>3</sup>⁄<sub>8</sub><br>
+          If n = 5, P = <sup>11</sup>⁄<sub>30</sub><br>
+          If n = 6, P = <sup>53</sup>⁄<sub>144</sub><br>
+          It is easy to observe that Pn = Pn-1 + (-1)<sup>n</sup>/n! <br>
+          But what if n = ∞?<br>
+          P =  <sup>1</sup>⁄<sub>2</sub>  -  <sup>1</sup>⁄<sub>6</sub>  +  <sup>1</sup>⁄<sub>24</sub> -  <sup>1</sup>⁄<sub>120</sub>  + <sup>1</sup>⁄<sub>720</sub>  - ...<br>
+          Recall the Taylor’s Expansion:<br>
+          e<sup>x</sup>  = 1 + x +  x<sup>2</sup>/2  +  x<sup>3</sup>/6  +  x<sup>4</sup>/24  +  x<sup>5</sup>/120  +  x<sup>6</sup>/720  + ... <br>
+          When we plug in x = -1, we get that lim<sub>n → +∞</sub>P = <sup>1</sup>⁄<sub>e</sub>, and therefore the answer to infinity people with infinity suitcases is <sup>1</sup>⁄<sub>e</sub>.</p>
 
-        <div class="section-title">
-          <h2>Our Featured Articles</h2>
-          <p>Works from members of the SL</p>
-        </div>
-
-        <div class="row">
-
-
-          <div class="col-xl-3 col-md-6 d-flex align-items-stretch mt-4 mt-md-0" data-aos="zoom-in" data-aos-delay="200">
-            <div class="icon-box">
-              <div class="icon"><i class="bx bx-file"></i></div>
-              <h4><a href="article_1.html">Suitcase Scenerio Problem</a></h4>
-              <p>By Robert Hu</p>
-            </div>
-          </div>
-
-          <div class="col-xl-3 col-md-6 d-flex align-items-stretch mt-4 mt-xl-0" data-aos="zoom-in" data-aos-delay="300">
-            <div class="icon-box">
-              <div class="icon"><i class="bx bx-book-open"></i></div>
-              <h4><a href="article_2.html">Proof for the Cauchy Inequality</a></h4>
-              <p>By Eric W.</p>
-            </div>
-          </div>
-
-          <div class="col-xl-3 col-md-6 d-flex align-items-stretch mt-4 mt-md-0" data-aos="zoom-in" data-aos-delay="200">
-            <div class="icon-box">
-              <div class="icon"><i class="bx bx-file"></i></div>
-              <h4><a href="article_3.html">Genetic Combinations & Allele Dominance</a></h4>
-              <p>By Robert Hu.</p>
-            </div>
-
-          </div>
-
-          <div class="col-xl-3 col-md-6 d-flex align-items-stretch mt-4 mt-xl-0" data-aos="zoom-in" data-aos-delay="300">
-            <div class="icon-box">
-              <div class="icon"><i class="bx bx-book-open"></i></div>
-              <h4><a href="article_4.html">2022 AMC12 A Problem 19 Solution</a></h4>
-              <p>By Edward.</p>
-            </div>
-          </div>
 
         </div>
-
       </div>
     </section>
 
   </main><!-- End #main -->
-  <section id="why-us" class="why-us section-bg">
-    <div class="container-fluid" data-aos="fade-up">
 
-      <div class="row">
-
-        <div class="col-lg-7 d-flex flex-column justify-content-center align-items-stretch  order-2 order-lg-1">
-
-          <div class="content">
-            <h3>About PRIMO<strong> Articles</strong></h3>
-            <p>
-              Contents that our members write will be posted here
-            </p>
-          </div>
-        </div>
-        <div class="col-lg-5 align-items-stretch order-1 order-lg-2 img" style='background-image: url("assets/img/articles.jpg");' data-aos="zoom-in" data-aos-delay="150">&nbsp;</div>
-      </div>
-
-    </div>
-  </section><!-- End Why Us Section -->
-
+  <!-- ======= Footer ======= -->
   <footer id="footer">
 
     <div class="footer-newsletter">
       <div class="container">
         <div class="row justify-content-center">
-          <!--
           <div class="col-lg-6">
             <h4>Join Our Newsletter</h4>
             <p>Tamen quem nulla quae legam multos aute sint culpa legam noster magna</p>
@@ -191,7 +154,6 @@
               <input type="email" name="email"><input type="submit" value="Subscribe">
             </form>
           </div>
-        -->
         </div>
       </div>
     </div>
@@ -201,13 +163,13 @@
         <div class="row">
 
           <div class="col-lg-3 col-md-6 footer-contact">
-            <h3>PRIMO SL</h3>
+            <h3>Arsha</h3>
             <p>
-              989 Baise Road<br>
-              Xuhui District, Shanghai<br>
-              Republic of China<br><br>
-              <strong>Phone:</strong> 114514 1919810<br>
-              <strong>Email:</strong> gavinyu7777@gmail.com<br>
+              A108 Adam Street <br>
+              New York, NY 535022<br>
+              United States <br><br>
+              <strong>Phone:</strong> +1 5589 55488 55<br>
+              <strong>Email:</strong> info@example.com<br>
             </p>
           </div>
 
@@ -225,16 +187,17 @@
           <div class="col-lg-3 col-md-6 footer-links">
             <h4>Our Services</h4>
             <ul>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Math</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Math</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Math</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Math</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Web Design</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Web Development</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Product Management</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Marketing</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Graphic Design</a></li>
             </ul>
           </div>
 
           <div class="col-lg-3 col-md-6 footer-links">
             <h4>Our Social Networks</h4>
-            <p>Contact us here</p>
+            <p>Cras fermentum odio eu feugiat lide par naso tierra videa magna derita valies</p>
             <div class="social-links mt-3">
               <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
               <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
@@ -257,8 +220,7 @@
         <!-- You can delete the links only if you purchased the pro version. -->
         <!-- Licensing information: https://bootstrapmade.com/license/ -->
         <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/arsha-free-bootstrap-html-template-corporate/ -->
-        <a href="https://github.com/PRIMO-SL/primo-sl.github.io/" target="_blank">View Github Project</a>
-
+        <a href="https://github.com/PRIMO-SL/primo-sl.github.io/">View Github Project</a>
       </div>
     </div>
   </footer><!-- End Footer -->
